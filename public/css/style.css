@@ -1,0 +1,133 @@
+html {
+    min-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+body {
+    max-width: 100%;
+    font-family: 'Roboto', sans-serif;
+    transform: translateZ(0);
+}
+
+h1 h2 h3 h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+p {
+    padding-bottom: 1%;
+    line-height: 2em;
+
+}
+
+hr {
+    margin: 1% 0 1% 0;
+    border-color: #CB7700;
+}
+
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 5vh; /*main height of the navbar */
+    background-color: rgb(6, 52, 82);
+    margin-bottom: 1.5vh;
+    box-shadow: 0 22px 27px rgba(0, 0, 0, 0.9);
+    /*Font-size:1.5em;*/
+
+}
+
+.navbar .navbar-nav > .active > a {
+    /*background-color: #12557F;*/
+}
+
+.top {
+    margin-top: 0.5%;
+}
+
+.navbar .navbar-nav > li > a {
+
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.navbar .navbar-nav > li > a:hover {
+    color: #CB7700;
+}
+
+.nav > li > a:hover {
+    background-color: transparent;
+}
+
+.navbar .navbar-toggle {
+    /*float: left; !* Move navbar toggle to left *!*/
+    margin: 15px;
+    background-color: #09517f;
+}
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #CB7700; /* Changes regular toggle color */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.dropdown-menu > li > a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color: rgb(6, 52, 82);
+    color: #CB7700;
+}
+
+.modal-nav-content {
+    width: 100%;
+    height: auto;
+}
+
+.modal-nav-body {
+    margin-top: 30vh;
+}
+
+.modal-nav-body ul {
+    list-style-type: none;
+    color: white;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.modal-nav-body ul li {
+    text-align: center;
+    font-size: 130%;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.modalA {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+.modalA:hover {
+    font-family: 'Montserrat', sans-serif;
+    color: #CB7700;
+    text-decoration: none;
+}
+
+.modal-backdrop.in {
+    opacity: 0.8;
+}
+
+
+
+

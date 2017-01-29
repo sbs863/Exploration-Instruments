@@ -1,0 +1,59 @@
+.aboutNav {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.aboutBackground {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 15vh;
+    background-image: linear-gradient(rgba(9, 81, 127, 0.8), rgba(9, 81, 127, 0.8)), url(../../images/about.jpg);
+    background-repeat: no-repeat;
+    outline-style: solid;
+    outline-color: #515151;
+    -webkit-background-size: auto;
+    margin-top:8vh;
+}
+
+.aboutGraphic {
+    display: flex;
+    justify-content: flex-end;
+    color: #ffffff;
+    padding-right: 12.5%;
+    font: 700 3em/1.2em 'Montserrat', sans-serif;
+
+}
+
+.aboutTxt {
+    height: 50vh;
+    position: relative;
+    padding-left: 3%;
+    overflow-y: scroll;
+}
+
+#dennis {
+    margin-top: 16%;
+    padding-left:10%;
+    height: auto;
+    size:20vw;
+
+}
+
+.breadcrumb {
+    margin-bottom: 0.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutTabs > a {
+    font-family:'Montserrat', sans-serif;
+
+}
+.nav-pills > li.active > a {
+    background-color: #09517f;
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    justify-content:flex-end;
+}
