@@ -1,6 +1,5 @@
 <?php
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,7 +10,9 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
+if (App::environment('remote')) {
+    URL::forceSchema('https');
+};
 
 
 
