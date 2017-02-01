@@ -14,12 +14,12 @@
 
 
 
-Auth::routes();
 
 
 Route::get('/login', function () {
         return view('pages.login');
     });
+Auth::routes();
 
 Route::group(['middleware' => 'auth'], function() {
 
