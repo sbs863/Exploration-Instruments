@@ -4,7 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\URL;
-use Illuminate\Support\Facades\forceSchema;
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -15,7 +15,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
+        if (App::environment('remote')) {
+            URL::forceSchema('https');
+        };
     }
 
     /**
