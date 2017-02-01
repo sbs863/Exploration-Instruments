@@ -11,13 +11,7 @@
 |
 */
 Route::group(array('https'), function(){
-    // All routes goes here
-    Route::get('/login', function () {
-        return view('pages.login');
-    });
-    Auth::routes();
 
-    Route::group(['middleware' => 'auth'], function() {
 
         Route::get('/', function () {
             return view('home');
@@ -42,9 +36,6 @@ Route::group(array('https'), function(){
         Route::get('/home', 'HomeController@index')->name('home');
 
 
-
-
-    });
 
 
 
