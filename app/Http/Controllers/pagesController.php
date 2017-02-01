@@ -12,9 +12,9 @@ class pagesController extends Controller
         return view('pages.about');
     }
 
-    public function getEquipment()
+    public function getRentals()
     {
-        return view('pages.equipment');
+        return view('pages.rentals');
     }
 
     public function getNews()

@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <!-- Scripts -->
@@ -120,23 +121,11 @@
                     </div>
                 </div>
             </div>
-
-{{--<div class="row-fluid">--}}
-{{--<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">--}}
-{{--<ul class="nav navbar-nav">--}}
-
-{{--</ul>--}}
-{{--</nav>--}}
-
-{{--</div>--}}
-
+    <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 @yield('body')
 
 
 <!-- Scripts -->
-
-
-
 
 </body>
 </html>
