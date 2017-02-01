@@ -10,9 +10,12 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-Route::group(['middleware' => 'auth'], function () {
 
-    Route::group(array('https'), function () {
+
+Route::group(array('https'), function () {
+
+    Route::group(['middleware' => 'auth'], function () {
+
         // All routes goes here
 
 
