@@ -1,0 +1,99 @@
+header
+{
+    width: 100%;
+    height: 10%;
+    background-color: blue;
+}
+img
+{
+    width: 250px;
+    height: 250px;
+
+}
+#image_div
+{
+    margin-top: 2%;
+    margin-right: 5%;
+}
+#holder
+{
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    margin-left: 15%;
+}
+li
+{
+    display:block;
+    font-size: 15px;
+    margin-left: 15px;
+
+}
+.tri_Left
+{
+    width: 110;
+    height: 75;
+    border-style: solid;
+    border-width: 37.5px 110px 37.5px 0;
+    border-color: transparent #00ff11 transparent transparent;
+}
+.tri_Right
+{
+    width: 110;
+    height: 75;
+    border-style: solid;
+    border-width: 37.5px 0 37.5px 110px;
+    border-color: transparent transparent transparent #00ff11;
+}
+
+.mb-0
+{
+    font-size: 20px;
+    color: #09517f;
+    text-decoration:none;
+    border-color: #CB7700;
+}
+#product_list
+{
+    /*width: 17%;*/
+    margin-left: 5%;
+    color: green;
+
+}
+.ListItem
+{
+    font-family: bold;
+    color: red;
+}
+#product_Type
+{
+
+
+}
+a
+{
+    color: #09517f;
+    text-decoration:none;
+    border-color: #CB7700;
+
+}
+.collapsed
+{
+    color: #09517f;
+    text-decoration:none;
+    /* border-color: #CB7700;*/
+}
+.hold
+{
+
+}
+h4
+{
+    color: #09517f;
+    font-size: 20px;
+}
+.textWrap
+{
+    float: left;
+    margin: 10px;
+}

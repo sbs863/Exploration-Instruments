@@ -6,8 +6,9 @@ html {
 
 body {
     max-width: 100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Work', sans-serif;
     transform: translateZ(0);
+
 }
 
 h1 h2 h3 h4 {
@@ -24,6 +25,25 @@ p {
 hr {
     margin: 1% 0 1% 0;
     border-color: #CB7700;
+}
+
+a {
+   color: #09517f
+}
+
+a:hover {
+    color:#CB7700;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #09517f;
+    border-color: #000000;
+}
+
+.btn-primary:hover{
+    background-color:#CB7700;
+    color:#000000;
 }
 
 .navbar {
@@ -53,7 +73,7 @@ hr {
     font-weight: bold;
     color: #ffffff;
     border-radius: 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Work', sans-serif;
 
 }
 
@@ -72,7 +92,7 @@ hr {
 }
 
 .navbar .navbar-toggle .icon-bar {
-    background-color: #CB7700; /* Changes regular toggle color */
+    background-color:#c73714; /* Changes regular toggle color */
 }
 
 .dropdown:hover .dropdown-menu {
@@ -81,13 +101,15 @@ hr {
 }
 
 .dropdown-menu > li > a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Work', sans-serif;
 }
 
 .dropdown-menu > li > a:hover {
     background-color: rgb(6, 52, 82);
     color: #CB7700;
 }
+
+/*Modal Styles*/
 
 .modal-nav-content {
     width: 100%;
@@ -114,12 +136,12 @@ hr {
 }
 
 .modalA {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Work', sans-serif;
     color: #ffffff;
 }
 
 .modalA:hover {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Work', sans-serif;
     color: #CB7700;
     text-decoration: none;
 }
