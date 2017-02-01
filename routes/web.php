@@ -17,16 +17,16 @@
 Auth::routes();
 
 
+Route::get('/login', function () {
+        return view('pages.login');
+    });
+
 Route::group(['middleware' => 'auth'], function() {
 
     Route::get('/', function () {
         return view('home');
     });
 
-
-    Route::get('/login', function () {
-        return view('pages.login');
-    });
 
     Route::get('/about', 'pagesController@getAbout')->name('pages.about');
     Route::get('/rentals', 'pagesController@getRentals')->name('pages.rentals');
