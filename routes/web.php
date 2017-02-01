@@ -10,12 +10,12 @@
 | to using a Closure or controller method. Build something great!
 |
 */
+    Auth::routes();
 Route::group(array('https'), function(){
     // All routes goes here
     Route::get('/login', function () {
         return view('pages.login');
     });
-    Auth::routes();
 
     Route::group(['middleware' => 'auth'], function() {
 
