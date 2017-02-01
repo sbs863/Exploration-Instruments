@@ -10,11 +10,6 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-if (App::environment('production')) {
-    URL::forceSchema('https');
-};
-
-
 
 
 Route::get('/login', function () {
