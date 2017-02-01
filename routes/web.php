@@ -10,14 +10,15 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-Route::group(array('https'), function(){
-    // All routes goes here
-    Route::get('/login', function () {
-        return view('pages.login');
-    });
+Route::group(['middleware' => 'auth'], function () {
 
-    Route::group(['middleware' => 'auth'], function() {
+    Route::group(array('https'), function () {
+        // All routes goes here
 
+
+        Route::get('/login', function () {
+            return view('pages.login');
+        });
         Route::get('/', function () {
             return view('home');
         });
@@ -33,7 +34,6 @@ Route::group(array('https'), function(){
         Route::post('/contact_store', 'contactController@store')->name('pages.contact');
 
 
-
         Route::get('/newCustomer', 'pagesController@getNewCustomer')->name('pages.newCustomer');
         Route::get('/portal', 'pagesController@getPortal')->name('pages.portal');
 
@@ -41,15 +41,12 @@ Route::group(array('https'), function(){
         Route::get('/home', 'HomeController@index')->name('home');
 
 
-
-
     });
-
 
 
 });
 
-    Auth::routes();
+Auth::routes();
 
 
 ?>
