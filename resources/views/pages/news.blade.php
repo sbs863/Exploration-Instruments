@@ -45,7 +45,7 @@
 
                     <img src="../../images/news/ess1.jpg" class="img-responsive">
 
-                          <br/>
+                    <br/>
 
                     <p class="lead">Exploration Instruments is now offering the new ESS Mini Accelerated Weight Drop
                         Source. This light-weight source weighs only 150 lbs total and delivers quite a punch in energy
@@ -85,7 +85,6 @@
                         <h4>Latest Posts</h4>
                     </div>
                     <ul class="list-group">
-                        <li class="list-group-item"><a href="#">1. Aries Sun Sign March 21 - April 19</a></li>
                         <li class="list-group-item"><a href="singlepost.html">1. Exploration Instruments opens new
                                 office </a></li>
                         <li class="list-group-item"><a href="singlepost.html">2. New ESS Mini AWD Seismic Source</a>
