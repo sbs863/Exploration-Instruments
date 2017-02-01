@@ -72,8 +72,8 @@
                     </ul>
                     @if (Auth::guest())
                         <ul class="nav navbar-nav navbar-right">
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
+                        <li><a href="{{ secure_url('/login') }}">Login</a></li>
+                        <li><a href="{{ secure_url('/register') }}">Register</a></li>
                         </ul>
                     @else
                         <ul class="nav navbar-nav navbar-right">
