@@ -11,7 +11,7 @@
 |
 */
 
-    // All routes goes here
+
     Route::get('/login', function () {
         return view('pages.login');
     });
