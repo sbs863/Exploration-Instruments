@@ -11,11 +11,11 @@
 |
 */
 Route::group(array('https'), function(){
-    Auth::routes();
     // All routes goes here
     Route::get('/login', function () {
         return view('pages.login');
     });
+    Auth::routes();
 
     Route::group(['middleware' => 'auth'], function() {
 
