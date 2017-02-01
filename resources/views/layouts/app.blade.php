@@ -71,10 +71,10 @@
                         <li><a class="navItem" href="/contact">Contact</a></li>
                     </ul>
                     @if (Auth::guest())
-                        {{--<ul class="nav navbar-nav navbar-right">--}}
-                        {{--<li><a href="{{ url('/login') }}">Login</a></li>--}}
-                        {{--<li><a href="{{ url('/register') }}">Register</a></li>--}}
-                        {{--</ul>--}}
+                        <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{{ url('/login') }}">Login</a></li>
+                        <li><a href="{{ url('/register') }}">Register</a></li>
+                        </ul>
                     @else
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
