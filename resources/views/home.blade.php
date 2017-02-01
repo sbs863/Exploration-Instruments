@@ -6,10 +6,10 @@
 
 @section('body')
 
-    <link href="{{ asset('css/default.css') }}" media="all" rel="stylesheet" type="text/css"/>
-    <link href="{{ asset('css/home.css') }}" media="all" rel="stylesheet" type="text/css"/>
-    <link href="{{ asset('css/component.css') }}" media="all" rel="stylesheet" type="text/css"/>
-    <link href="{{ asset('css/animate.css') }}" media="all" rel="stylesheet" type="text/css"/>
+    <link href="{{ secure_asset('css/default.css') }}" media="all" rel="stylesheet" type="text/css"/>
+    <link href="{{ secure_asset('css/home.css') }}" media="all" rel="stylesheet" type="text/css"/>
+    <link href="{{ secure_asset('css/component.css') }}" media="all" rel="stylesheet" type="text/css"/>
+    <link href="{{ secure_asset('css/animate.css') }}" media="all" rel="stylesheet" type="text/css"/>
 
 
 

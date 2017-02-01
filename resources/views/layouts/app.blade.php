@@ -15,7 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+
+    <link href="{{ secure_asset('css/style.css') }}" media="all" rel="stylesheet" type="text/css"/>
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode(['csrfToken' => csrf_token(),
