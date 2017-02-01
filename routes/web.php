@@ -10,7 +10,6 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-    Auth::routes();
 Route::group(array('https'), function(){
     // All routes goes here
     Route::get('/login', function () {
@@ -50,6 +49,7 @@ Route::group(array('https'), function(){
 
 });
 
+    Auth::routes();
 
 
 ?>
