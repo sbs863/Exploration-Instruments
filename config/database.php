@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'pgsql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -55,10 +55,10 @@ return [
 
         'pgsql' => [
             'driver'   => 'pgsql',
-            'host'     => parse_url(getenv("DATABASE_URL"))["host"],
-            'database' => substr(parse_url(getenv("DATABASE_URL"))["path"], 1),
-            'username' => parse_url(getenv("DATABASE_URL"))["user"],
-            'password' => parse_url(getenv("DATABASE_URL"))["pass"],
+            'host'     => 'ec2-54-243-38-139.compute-1.amazonaws.com:5432',
+            'database' => 'd3s5j761k69n20',
+            'username' => 'ivwfkjogqpdbtf',
+            'password' => '41dfd0400802d92726f77a542fb374fb0f08839932e0d8d2b1c006868b862234',
             'charset'  => 'utf8',
             'prefix'   => '',
             'schema'   => 'public',
