@@ -10,40 +10,46 @@
 | to using a Closure or controller method. Build something great!
 |
 */
-
-
-Route::get('/login', function () {
+Route::group(array('https'), function(){
+    // All routes goes here
+    Route::get('/login', function () {
         return view('pages.login');
     });
-Auth::routes();
+    Auth::routes();
 
-Route::group(['middleware' => 'auth'], function() {
+    Route::group(['middleware' => 'auth'], function() {
 
-    Route::get('/', function () {
-        return view('home');
+        Route::get('/', function () {
+            return view('home');
+        });
+
+
+        Route::get('/about', 'pagesController@getAbout')->name('pages.about');
+        Route::get('/rentals', 'pagesController@getRentals')->name('pages.rentals');
+        Route::get('/news', 'pagesController@getNews')->name('pages.news');
+
+        Route::get('/contact', 'contactController@create')->name('pages.contact');
+
+
+        Route::post('/contact_store', 'contactController@store')->name('pages.contact');
+
+
+
+        Route::get('/newCustomer', 'pagesController@getNewCustomer')->name('pages.newCustomer');
+        Route::get('/portal', 'pagesController@getPortal')->name('pages.portal');
+
+
+        Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
     });
-
-
-    Route::get('/about', 'pagesController@getAbout')->name('pages.about');
-    Route::get('/rentals', 'pagesController@getRentals')->name('pages.rentals');
-    Route::get('/news', 'pagesController@getNews')->name('pages.news');
-
-    Route::get('/contact', 'contactController@create')->name('pages.contact');
-
-
-    Route::post('/contact_store', 'contactController@store')->name('pages.contact');
-
-
-
-    Route::get('/newCustomer', 'pagesController@getNewCustomer')->name('pages.newCustomer');
-    Route::get('/portal', 'pagesController@getPortal')->name('pages.portal');
-
-
-    Route::get('/home', 'HomeController@index')->name('home');
-
 
 
 
 });
+
+
 
 ?>
