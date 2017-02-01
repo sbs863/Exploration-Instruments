@@ -4,7 +4,7 @@
 @endsection
 
 @section('body')
-    <link href="{{ asset('css/products.css') }}" media="all" rel="stylesheet" type="text/css"/>
+    <link href="{{ secure_asset('css/products.css') }}" media="all" rel="stylesheet" type="text/css"/>
   <header>
   	<h1>EX</h1>
   </header>
@@ -36,8 +36,8 @@
   </div>
 @endsection
 
-<script src="{{ asset('js/app.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/products.js') }}"></script>
+<script src="{{ secure_asset('js/app.js') }}"></script>
+<script type="text/javascript" src="{{ secure_asset('js/products.js') }}"></script>
 
    
 

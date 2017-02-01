@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('body')
-    <link href="{{ asset('css/news.css') }}" media="all" rel="stylesheet" type="text/css"/>
+    <link href="{{ secure_asset('css/news.css') }}" media="all" rel="stylesheet" type="text/css"/>
     <!-- Body -->
     <div class="container ">
         <div class="row newsContainer">

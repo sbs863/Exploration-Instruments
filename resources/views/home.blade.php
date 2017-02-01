@@ -103,11 +103,11 @@
         </div>
     </div>
 
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ secure_asset('js/app.js') }}"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ asset('js/modernizr.custom.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/dynamic.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/grid.js') }}"></script>
+    <script type="text/javascript" src="{{ secure_asset('js/modernizr.custom.js') }}"></script>
+    <script type="text/javascript" src="{{ secure_asset('js/dynamic.js') }}"></script>
+    <script type="text/javascript" src="{{ secure_asset('js/grid.js') }}"></script>
     <script src=""></script>
 @endsection
 
