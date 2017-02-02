@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('body')
+    <link href="{{ secure_asset('css/style.css') }}" media="all" rel="stylesheet" type="text/css"/>
 <div class="container">
-    <div class="row">
+    <div class="row register">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>

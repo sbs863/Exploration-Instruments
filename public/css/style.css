@@ -31,6 +31,10 @@ a {
    color: #09517f
 }
 
+.register {
+    margin-top:60px;
+}
+
 a:hover {
     color:#CB7700;
 }
