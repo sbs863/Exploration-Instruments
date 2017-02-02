@@ -68,12 +68,8 @@ li
 }
 #product_list
 {
-    /*width: 17%;*/
-    margin-left: 5%;
     color: green;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
 
 }
 .ListItem
@@ -112,4 +108,9 @@ h4
 {
     float: left;
     margin: 10px;
+}
+@media (max-width: 768px) {
+    .prodCol {
+        width:28%;
+    }
 }
