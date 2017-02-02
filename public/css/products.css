@@ -4,6 +4,11 @@ header
     height: 10%;
 
 }
+a{
+    margin:4px;
+}
+
+
 
 panel {
     max-height:700px;
@@ -62,6 +67,9 @@ li
     /*width: 17%;*/
     margin-left: 5%;
     color: green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 .ListItem
