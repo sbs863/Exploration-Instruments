@@ -51,7 +51,7 @@
     </div>
     <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a class="navItem" href="/home">Home</a></li>
+            <li class="active"><a class="navItem" href="{{ secure_url('/home') }}">Home</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                    aria-expanded="false"> Equipment
@@ -59,17 +59,17 @@
 
                 <ul class="dropdown-menu" role="menu">
                     <li>
-                        <a class="navItem" href="/rentals">For Rent</a>
-                        <a class="navItem" href="/saless">For Sale</a>
+                        <a class="navItem" href="{{ secure_url('/rentals') }}">For Rent</a>
+                        <a class="navItem" href="{{ secure_url('/sales') }}">For Sale</a>
                     </li>
                 </ul>
             </li>
 
-            <li><a class="navItem" href="/about">About Us</a></li>
-            <li><a class="navItem" href="/news">News & Articles</a></li>
-            <li><a class="navItem" href="/newCustomer">New Customer Forms</a></li>
-            <li><a class="navItem" href="/portal">Customer Portal</a></li>
-            <li><a class="navItem" href="/contact">Contact</a></li>
+            <li><a class="navItem" href="{{ secure_url('/about') }}">About Us</a></li>
+            <li><a class="navItem" href="{{ secure_url('/news') }}">News & Articles</a></li>
+            <li><a class="navItem" href="{{ secure_url('/newCustomer') }}">New Customer Forms</a></li>
+            <li><a class="navItem" href="{{ secure_url('/portal') }}">Customer Portal</a></li>
+            <li><a class="navItem" href="{{ secure_url('/contact') }}">Contact</a></li>
         </ul>
         @if (Auth::guest())
             <ul class="nav navbar-nav navbar-right">
@@ -110,14 +110,14 @@
         <div class="modal-nav-content">
             <div class="modal-nav-body">
                 <ul>
-                    <li class="active"><a class="navItem" href="/home">Home</a></li>
-                    <li><a class="modalA" href="/rentals">For Rent</a></li>
-                    <li><a class="modalA" href="/sales">For Sale</a></li>
-                    <li><a class="modalA" href="/about">About Us</a></li>
-                    <li><a class="modalA" href="/news">News & Articles</a></li>
-                    <li><a class="modalA" href="/newCustomer">New Customer Forms</a></li>
-                    <li><a class="modalA" href="/portal">Customer Portal</a></li>
-                    <li><a class="modalA" href="/contact">Contact</a></li>
+                    <li class="active"><a class="navItem" href="{{ secure_url('/home') }}">Home</a></li>
+                    <li><a class="modalA" href="{{ secure_url('/rentals') }}">For Rent</a></li>
+                    <li><a class="modalA" href="{{ secure_url('/sales') }}">For Sale</a></li>
+                    <li><a class="modalA" href="{{ secure_url('/about') }}">About Us</a></li>
+                    <li><a class="modalA" href="{{ secure_url('/news') }}">News & Articles</a></li>
+                    <li><a class="modalA" href="{{ secure_url('/newCustomer') }}">New Customer Forms</a></li>
+                    <li><a class="modalA" href="{{ secure_url('/portal') }}">Customer Portal</a></li>
+                    <li><a class="modalA" href="{{ secure_url('/contact') }}">Contact</a></li>
                 </ul>
             </div>
         </div>
