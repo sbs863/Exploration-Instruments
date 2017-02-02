@@ -62,6 +62,9 @@
                                 <a class="btn btn-link" href="{{ secure_url('/password/reset') }}">
                                     Forgot Your Password?
                                 </a>
+                                <a class="btn btn-link" href="{{ secure_url('/register') }}">
+                                    Not a user? Register Now
+                                </a>
                             </div>
                         </div>
                     </form>

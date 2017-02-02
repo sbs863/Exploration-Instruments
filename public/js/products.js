@@ -421,8 +421,6 @@ $(function () {
                 }
             }
         }
-
-
     });
 
     $(".ListItem").on("click", function (event) {
