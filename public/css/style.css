@@ -21,6 +21,10 @@ p {
     line-height: 2em;
 
 }
+.galleryRow{
+    display:flex;
+    justify-content: space-between;
+}
 
 hr {
     margin: 1% 0 1% 0;
