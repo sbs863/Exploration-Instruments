@@ -421,6 +421,8 @@ $(function () {
                 }
             }
         }
+
+
     });
 
     $(".ListItem").on("click", function (event) {
@@ -431,7 +433,7 @@ $(function () {
                 if (event.target.id === equipment[i].products.product[j].productName) {
                     $("#product_Type").html("");
                     var str4 = "";
-                    str4 += '<div class="media"><div class="media-left"><h3>' + equipment[i].products.product[j].productName + '</h3><img src="' + equipment[i].products.product[j].photo + '" class = "textWrap">';
+                    str4 += '<div class="media"><div class="media-left"><h5>' + equipment[i].products.product[j].productName + '</h5><img src="' + equipment[i].products.product[j].photo + '" class = "textWrap">';
                     str4 += '<h4>' + equipment[i].products.product[j].description + '</h4> <br>';
                     str4 += '<ul><li> Specs: ' + equipment[i].products.product[j].specs + '</li>';
                     str4 += '<li>Weight: ' + equipment[i].products.product[j].weight + '</li>';
