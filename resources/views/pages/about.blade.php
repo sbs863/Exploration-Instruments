@@ -29,7 +29,7 @@
 
         <ol class="breadcrumb">
             <li>
-                <a href="/home">Home</a>
+                <a href="{{ secure_url('/home') }}">Home</a>
             </li>
             <li class="active">About Us</li>
         </ol>
@@ -39,11 +39,11 @@
                     <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" id="aboutScrollSpy">
                         <nav>
                             <ul class="nav nav-pills nav-stacked">
-                                <li class="active"><a class="aboutTabs animated fadeinDown" id="history" href="#about1">Our
+                                <li class="active"><a class="aboutTabs animated fadeinDown" id="history" href="{{ secure_url('#about1') }}">Our
                                         Mission</a></li>
-                                <li><a class=" aboutTabs animated fadeInDown" id="values" href="#about2">Our Values</a>
+                                <li><a class=" aboutTabs animated fadeInDown" id="values" href="{{ secure_url('#about2') }}">Our Values</a>
                                 </li>
-                                <li><a class="aboutTabs animated fadeInDown" id="mission" href="#about3">Our History</a>
+                                <li><a class="aboutTabs animated fadeInDown" id="mission" href="{{ secure_url('#about3') }}">Our History</a>
                                 </li>
                             </ul>
                         </nav>

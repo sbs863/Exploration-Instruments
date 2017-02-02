@@ -54,13 +54,13 @@
                         </h2>
                     </div>
                     <div class="col-lg-2 col-lg-offset-1 col-md-3 col-md-offset-1  col-sm-4 col-sm-offset-1 col-xs-5 col-xs-offset-2 thumb">
-                        <a class="thumbnail" href="#">
+                        <a class="thumbnail" href="{{ secure_url('#') }}">
                             <img class="img-responsive execute" src="../../images/logos_home/AEG.png" alt="">
                         </a>
-                        <a class="thumbnail" href="#">
+                        <a class="thumbnail" href="{{ secure_url('#') }}">
                             <img class="img-responsive execute" src="../../images/logos_home/enengs.png" alt="">
                         </a>
-                        <a class="thumbnail" href="#">
+                        <a class="thumbnail" href="{{ secure_url('#') }}">
                             <img class="img-responsive execute" src="../../images/logos_home/GWBlogo.jpg" alt="">
                         </a>
                     </div>
