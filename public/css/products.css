@@ -4,6 +4,10 @@ header
     height: 10%;
 
 }
+
+panel {
+    max-height:700px;
+}
 img
 {
     width: 250px;
