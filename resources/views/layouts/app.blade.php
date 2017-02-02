@@ -11,9 +11,11 @@
     <title>@yield('title')</title>
 
     <!-- Styles -->
-    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+    <link href="{{ secure_url('fonts.googleapis.com/css?family=Roboto') }}" rel="stylesheet">
+    <link href="{{ secure_url('fonts.googleapis.com/css?family=Montserrat:400,700') }}" rel="stylesheet">
+    <link href="{{ secure_url('fonts.googleapis.com/css?family=Work+Sans') }}" rel="stylesheet">
+
 
     <link href="{{ secure_asset('css/app.css') }}" media="all" rel="stylesheet" type="text/css"/>
     <link href="{{ secure_asset('css/style.css') }}" media="all" rel="stylesheet" type="text/css"/>
