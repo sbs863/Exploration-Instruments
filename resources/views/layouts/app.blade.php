@@ -71,6 +71,7 @@
             <li><a class="navItem" href="{{ secure_url('/newCustomer') }}">New Customer Forms</a></li>
             <li><a class="navItem" href="{{ secure_url('/portal') }}">Customer Portal</a></li>
             <li><a class="navItem" href="{{ secure_url('/contact') }}">Contact</a></li>
+           <li> <a href="http://www.beyondsecurity.com/vulnerability-scanner-verification/expins.herokuapp.com"><img src="https://seal.beyondsecurity.com/verification-images/expins.herokuapp.com/vulnerability-scanner-2.gif" alt="Website Security Test" border="0" /></a></li>
         </ul>
         @if (Auth::guest())
             <ul class="nav navbar-nav navbar-right">
